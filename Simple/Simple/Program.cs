@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Linq;
 
 using Realms;
 
@@ -29,18 +30,18 @@ namespace Simple
                 realm.Add(new Table1
                 {
                     PrimaryKey = 1,
-                    Column1 = "Value1",
-                    Column2 = "Value2",
-                    Column3 = "Value3"
+                    Column1 = "Value1-1",
+                    Column2 = "Value1-2",
+                    Column3 = "Value1-3"
                 });
 
                 // オブジェクトを書き込む。
                 realm.Add(new Table1
                 {
                     PrimaryKey = 2,
-                    Column1 = "Value4",
-                    Column2 = "Value5",
-                    Column3 = "Value6"
+                    Column1 = "Value2-1",
+                    Column2 = "Value2-2",
+                    Column3 = "Value2-3"
                 });
             });
 
@@ -48,9 +49,8 @@ namespace Simple
             var rowByPrimaryKey = realm.Find<Table1>(1);
             Console.WriteLine("Find: {0}", rowByPrimaryKey);
 
-            // オブジェクトを読み込む。
-            // 書き込みは次回実行に引き継がれるので、繰り返し実行すると行がどんどん増えていく。
-            foreach (var row in realm.All<Table1>())
+            // LINQ で条件指定でオブジェクトを読み込む。
+            foreach (var row in realm.All<Table1>().Where(i => i.Column1 == "Value2-1"))
             {
                 Console.WriteLine("All: {0}", row);
             }
