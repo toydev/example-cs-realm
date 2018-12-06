@@ -58,8 +58,8 @@ namespace Simple
             realm.Write(() =>
             {
                 // オブジェクトのプロパティを直接書き換えてデータベースを更新する。
-                var row = realm.Find<Table1>(1);
-                row.Column2 = "NewValue2";
+                var updateTarget = realm.Find<Table1>(1);
+                updateTarget.Column2 = "NewValue";
             });
 
             // 更新されたことを確認する。
