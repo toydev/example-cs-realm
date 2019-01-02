@@ -7,7 +7,9 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="200" Width="200">
     <DockPanel>
+        <!-- Managed オブジェクトのプロパティをバインドすることで変更の自動反映ができる -->
         <TextBlock DockPanel.Dock="Top" Text="{Binding Counter.Count}" FontSize="50" HorizontalAlignment="Center" />
+
         <Button DockPanel.Dock="Bottom" Content="Count Up" Command="{Binding CountUpCommand}" FontSize="30" />
     </DockPanel>
 </Window>
