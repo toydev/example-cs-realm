@@ -37,7 +37,7 @@ namespace Transaction
 
                 var updateTarget = threadRealm.Find<Table1>(1);
 
-                // 更新もトランザクション内で行う。
+                // 更新をトランザクション内で行う。
                 threadRealm.Write(() =>
                 {
                     updateTarget.Column1 = "NewValue";
