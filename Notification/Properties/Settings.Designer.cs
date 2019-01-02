@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SimpleWpfApp.Properties
+namespace Notification.Properties
 {
 
 

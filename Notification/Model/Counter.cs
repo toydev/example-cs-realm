@@ -1,6 +1,6 @@
 ﻿using Realms;
 
-namespace SimpleWpfApp.Model
+namespace Notification.Model
 {
     class Counter : RealmObject
     {

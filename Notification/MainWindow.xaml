@@ -1,9 +1,9 @@
-﻿<Window x:Class="SimpleWpfApp.MainWindow"
+﻿<Window x:Class="Notification.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:SimpleWpfApp"
+        xmlns:local="clr-namespace:Notification"
         mc:Ignorable="d"
         Title="MainWindow" Height="200" Width="200">
     <DockPanel>

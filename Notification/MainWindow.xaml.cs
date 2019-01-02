@@ -1,7 +1,6 @@
-﻿using System;
-using System.Windows;
+﻿using System.Windows;
 
-namespace SimpleWpfApp
+namespace Notification
 {
     /// <summary>
     /// MainWindow.xaml の相互作用ロジック
@@ -11,11 +10,6 @@ namespace SimpleWpfApp
         public MainWindow()
         {
             InitializeComponent();
-        }
-
-        protected override void OnInitialized(EventArgs e)
-        {
-            base.OnInitialized(e);
 
             DataContext = new MainWindowViewModel();
         }
