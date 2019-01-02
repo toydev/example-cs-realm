@@ -15,7 +15,7 @@ namespace Simple
             // カレントディレクトリに「simple.realm」という名前でファイルを作る設定にする。
             // ファイル名を指定しなかった場合は、「C:\Users\xxx\default.realm」になる。
             var config = new RealmConfiguration(Path.Combine(
-                Directory.GetCurrentDirectory(), "simple.realm"));
+                Directory.GetCurrentDirectory(), "Simple.realm"));
 
             // 繰り返し実行できるよう既にデータベースがある場合は削除する。
             Realm.DeleteRealm(config);

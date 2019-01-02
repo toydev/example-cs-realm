@@ -13,7 +13,7 @@ namespace Transaction
         static void Main(string[] args)
         {
             var config = new RealmConfiguration(Path.Combine(
-                Directory.GetCurrentDirectory(), "simple.realm"));
+                Directory.GetCurrentDirectory(), "Transaction.realm"));
             Realm.DeleteRealm(config);
 
             // 書き込みはトランザクション内で行う。

@@ -12,7 +12,7 @@ namespace Relation
         static void Main(string[] args)
         {
             var config = new RealmConfiguration(Path.Combine(
-                Directory.GetCurrentDirectory(), "simple.realm"));
+                Directory.GetCurrentDirectory(), "Relation.realm"));
             Realm.DeleteRealm(config);
 
             var realm = Realm.GetInstance(config);
