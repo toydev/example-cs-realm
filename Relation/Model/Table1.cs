@@ -16,7 +16,8 @@ namespace Relation.Model
         public override string ToString()
         {
             return string.Format(
-                "Object1: {0}, ObjectN: [{1}]",
+                "Name: {0}, Object1: [{1}], ObjectN: [{2}]",
+                Name ?? "",
                 Object1?.ToString() ?? "",
                 string.Join(",", ObjectN));
         }
