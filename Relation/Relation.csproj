@@ -72,7 +72,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Model\Table3.cs" />
     <Compile Include="Model\Table2.cs" />
     <Compile Include="Model\Table1.cs" />
     <Compile Include="Program.cs" />

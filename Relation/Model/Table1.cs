@@ -11,7 +11,7 @@ namespace Relation.Model
         // 一対一は単にプロパティを作る。
         public Table2 Object1 { get; set; }
         // 一対多は IList のプロパティを作る。
-        public IList<Table3> ObjectN { get; }
+        public IList<Table2> ObjectN { get; }
 
         public override string ToString()
         {

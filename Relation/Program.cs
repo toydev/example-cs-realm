@@ -23,8 +23,8 @@ namespace Relation
                     Name = "Table1-1",
                     Object1 = new Table2 { Name = "Table2-1" },
                 };
-                insertObject.ObjectN.Add(new Table3 { Name = "Table3-1" });
-                insertObject.ObjectN.Add(new Table3 { Name = "Table3-2" });
+                insertObject.ObjectN.Add(new Table2 { Name = "Table2-2" });
+                insertObject.ObjectN.Add(new Table2 { Name = "Table2-3" });
                 realm.Add(insertObject);
             });
 
