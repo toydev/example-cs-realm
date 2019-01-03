@@ -7,12 +7,12 @@ namespace Simple.Model
     {
         // プロパティがカラムになる。
 
-        // 主キーには PrimaryKey アノテーションを付ける。
+        // 主キーには PrimaryKey 属性を付ける。
         [PrimaryKey]
         public int PrimaryKey { get; set; }
         public string Column1 { get; set; }
         public string Column2 { get; set; }
-        // インデックスを作る項目には Indexed アノテーションを付ける。
+        // インデックスを作る項目には Indexed 属性を付ける。
         [Indexed]
         public string Column3 { get; set; }
 
